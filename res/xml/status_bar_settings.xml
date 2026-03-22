@@ -24,6 +24,12 @@
         android:title="@string/network_traffic_settings_title"
         android:summary="@string/network_traffic_settings_summary" />
 
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="hide_status_bar_in_screenshot"
+        android:title="@string/hide_status_bar_in_screenshot_title"
+        android:summary="@string/hide_status_bar_in_screenshot_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/status_bar_icons_title">
 
