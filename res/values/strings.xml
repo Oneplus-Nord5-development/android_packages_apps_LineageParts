@@ -689,6 +689,14 @@
     <string name="trust_restrict_usb_disabled">Always allow USB connections</string>
     <string name="trust_summary">Keep your device secure and protect your privacy</string>
 
+    <!-- QS Tiles Style -->
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="qs_tile_shape_title">QS tiles shape</string>
+    <string name="qs_tile_shape_dynamic">Dynamic</string>
+    <string name="qs_tile_shape_circle">Circle</string>
+    <string name="qs_tile_shape_rounded_square">Rounded square</string>
+    <string name="qs_tile_shape_square">Square</string>
+
     <!-- Sms limit -->
     <string name="sms_security_check_limit_title">SMS message limit</string>
     <string name="sms_security_check_limit_summary">Apps can send %s messages in 1 minute before requiring confirmation</string>
