@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="misc_settings"
+    android:title="@string/misc_settings_title">
+
+
+</PreferenceScreen>
