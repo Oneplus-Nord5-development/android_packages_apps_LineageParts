@@ -244,6 +244,38 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
+        <!-- Miscellaneous settings -->
+        <activity-alias
+            android:name=".misc.MiscellaneousSettings"
+            android:exported="true"
+            android:label="@string/misc_settings_title"
+            android:targetActivity="PartsActivity">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.lineageparts.MISC_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_24dp" />
+            <meta-data
+                android:name="com.android.settings.icon_tintable"
+                android:value="true" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-253" />
+            <meta-data
+                android:name="com.android.settings.profile"
+                android:value="primary_profile_only" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/summary_empty" />
+        </activity-alias>
+
         <!-- Touchscreen gesture settings (Gestures category) -->
         <activity-alias
             android:name=".gestures.TouchscreenGestureSettings"

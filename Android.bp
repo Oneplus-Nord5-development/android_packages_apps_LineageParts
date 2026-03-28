@@ -30,6 +30,7 @@ android_app {
         "androidx.dynamicanimation_dynamicanimation",
         "androidx.palette_palette",
         "androidx.recyclerview_recyclerview",
+        "custom-preference",
         "jsr305",
         "org.lineageos.platform.internal",
         "SettingsLibPreference",

@@ -84,6 +84,7 @@
         <item>@string/hardware_keys_action_split_screen</item>
         <item>@string/hardware_keys_action_kill_app</item>
         <item>@string/hardware_keys_action_play_pause_music</item>
+        <item>@string/hardware_keys_action_screenshot</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -99,6 +100,7 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
+        <item>12</item>
     </string-array>
 
     <!-- Volume key cursor control -->
@@ -260,6 +262,7 @@
 
     <string-array name="status_bar_battery_style_entries" translatable="false">
         <item>@string/status_bar_battery_style_icon_landscape</item>
+        <item>@string/status_bar_battery_style_icon_portrait</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_text</item>
@@ -267,6 +270,7 @@
 
     <string-array name="status_bar_battery_style_values" translatable="false">
         <item>0</item>
+        <item>4</item>
         <item>1</item>
         <item>3</item>
         <item>2</item>
@@ -502,5 +506,20 @@
         <item>2</item>
         <item>1</item>
         <item>0</item>
+    </string-array>
+
+    <!-- QS Tiles Shape -->
+    <string-array name="qs_tile_shape_entries">
+        <item>@string/qs_tile_shape_dynamic</item>
+        <item>@string/qs_tile_shape_circle</item>
+        <item>@string/qs_tile_shape_rounded_square</item>
+        <item>@string/qs_tile_shape_square</item>
+    </string-array>
+
+    <string-array name="qs_tile_shape_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 </resources>
