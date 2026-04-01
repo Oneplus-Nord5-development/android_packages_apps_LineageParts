@@ -38,6 +38,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUS_BAR_SHOW_DYNAMIC_ISLAND = "status_bar_show_dynamic_island";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
@@ -112,7 +113,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
 
         final boolean disallowCenteredClock = DeviceUtils.hasCenteredCutout(getActivity())
-                    || getNetworkTrafficStatus() != 0;
+                    || getNetworkTrafficStatus() != 0
+                    || getDynamicIslandStatus() != 0;
 
         // Adjust status bar preferences for RTL
         if (isRtlMode(getResources())) {
@@ -182,5 +184,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         int position = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
                 LineageSettings.Secure.NETWORK_TRAFFIC_POSITION, /* Center */ 1);
         return mode != 0 && position == 1 ? 1 : 0;
+    }
+
+    private int getDynamicIslandStatus() {
+        return LineageSettings.System.getInt(getActivity().getContentResolver(),
+                STATUS_BAR_SHOW_DYNAMIC_ISLAND, 0);
     }
 }

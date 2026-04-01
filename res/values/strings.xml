@@ -451,6 +451,8 @@
     <string name="status_bar_quick_qs_pulldown_right">Right</string>
     <string name="hide_status_bar_in_screenshot_title">Hide status bar in screenshots</string>
     <string name="hide_status_bar_in_screenshot_summary">Crop the status bar area out of full screenshots</string>
+    <string name="status_bar_dynamic_island_title">Dynamic island</string>
+    <string name="status_bar_dynamic_island_summary">Show a centered island for media, screen recording, and live scores</string>
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
