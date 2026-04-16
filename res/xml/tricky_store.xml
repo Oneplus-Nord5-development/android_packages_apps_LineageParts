@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 crDroid Android Project
+     Copyright (C) 2024 LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/tricky_store_title">
+
+    <PreferenceCategory
+        android:key="ts_keybox_category"
+        android:title="@string/ts_keybox_management">
+
+        <Preference
+            android:key="ts_import_keybox"
+            android:title="@string/ts_import_keybox"
+            android:summary="@string/ts_no_keybox" />
+
+        <Preference
+            android:key="ts_delete_keybox"
+            android:title="@string/ts_delete_keybox"
+            android:summary="@string/ts_delete_keybox_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ts_target_category"
+        android:title="@string/ts_target_configuration">
+
+        <Preference
+            android:key="ts_manage_targets"
+            android:title="@string/ts_manage_target_apps"
+            android:summary="@string/ts_no_targets" />
+
+        <ListPreference
+            android:key="ts_target_mode"
+            android:title="@string/ts_target_mode"
+            android:summary="%s"
+            android:entries="@array/ts_target_mode_entries"
+            android:entryValues="@array/ts_target_mode_values"
+            android:defaultValue="auto" />
+
+        <Preference
+            android:key="ts_import_targets"
+            android:title="@string/ts_import_target_list"
+            android:summary="@string/ts_import_target_list_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ts_footer_category"
+        android:title="@string/ts_footer_title">
+
+        <com.android.settingslib.widget.FooterPreference
+            android:key="ts_footer"
+            android:title="@string/ts_footer_body"
+            android:selectable="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
