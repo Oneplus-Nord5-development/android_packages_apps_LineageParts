@@ -31,4 +31,12 @@
         android:summary="@string/game_spoofing_summary"
         android:fragment="org.lineageos.lineageparts.spoofing.GameSpoofing" />
 
+    <!-- Mock location -->
+    <SwitchPreferenceCompat
+        android:key="hide_mock_location"
+        android:icon="@drawable/ic_location"
+        android:title="@string/hide_mock_location_title"
+        android:summary="@string/hide_mock_location_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

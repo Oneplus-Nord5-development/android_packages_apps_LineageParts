@@ -802,5 +802,8 @@
     <string name="gs_config_saved">Configuration saved</string>
     <string name="gs_loading_apps">Loading apps\u2026</string>
     <string name="gs_failed">Failed: %s</string>
+    
+    <!-- Hide mock location spoofing -->
+    <string name="hide_mock_location_title">Hide mock location</string>
+    <string name="hide_mock_location_summary">Prevent apps from knowing if the location is mocked or spoofed</string>
 </resources>
-
