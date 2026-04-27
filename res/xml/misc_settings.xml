@@ -22,4 +22,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="spoofing_category"
+        android:title="@string/spoofing_title">
+
+        <Preference
+            android:key="spoofing"
+            android:title="@string/spoofing_title"
+            android:fragment="org.lineageos.lineageparts.spoofing.Spoofing" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

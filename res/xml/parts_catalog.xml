@@ -101,8 +101,4 @@
           android:fragment="org.lineageos.lineageparts.trust.TrustPreferences"
           lineage:xmlRes="@xml/trust_preferences" />
 
-    <part android:key="spoofing"
-          android:title="@string/spoofing_title"
-          android:fragment="org.lineageos.lineageparts.spoofing.Spoofing"
-          lineage:xmlRes="@xml/spoofing" />
 </parts-catalog>

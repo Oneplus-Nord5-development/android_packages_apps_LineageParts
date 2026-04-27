@@ -419,34 +419,5 @@
             </intent-filter>
         </activity>
 
-        <!-- Spoofing settings (System category) -->
-        <activity-alias
-            android:name=".spoofing.Spoofing"
-            android:exported="true"
-            android:label="@string/spoofing_title"
-            android:targetActivity="PartsActivity">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-                <action android:name="org.lineageos.lineageparts.SPOOFING" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_spoofing" />
-            <meta-data
-                android:name="com.android.settings.icon_tintable"
-                android:value="true" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="-253" />
-            <meta-data
-                android:name="com.android.settings.profile"
-                android:value="primary_profile_only" />
-        </activity-alias>
-
     </application>
 </manifest>
