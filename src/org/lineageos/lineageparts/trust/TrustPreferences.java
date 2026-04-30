@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
  * SPDX-FileCopyrightText: 2018-2026 The LineageOS Project
+=======
+ * SPDX-FileCopyrightText: The LineageOS Project
+>>>>>>> cd9f0492e12b96481a604722c0d96603d75ce10d
  * SPDX-License-Identifier: Apache-2.0
  */
 
