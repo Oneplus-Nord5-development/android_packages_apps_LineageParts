@@ -806,4 +806,10 @@
     <!-- Hide mock location spoofing -->
     <string name="hide_mock_location_title">Hide mock location</string>
     <string name="hide_mock_location_summary">Prevent apps from knowing if the location is mocked or spoofed</string>
+
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+    <string name="menu_show_system">Show system apps</string>
+    <string name="menu_hide_system">Hide system apps</string>
 </resources>
