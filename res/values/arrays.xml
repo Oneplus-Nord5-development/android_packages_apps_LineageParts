@@ -86,6 +86,7 @@
         <item>@string/hardware_keys_action_play_pause_music</item>
         <item>@string/hardware_keys_action_screenshot</item>
         <item>@string/hardware_keys_action_ringermode</item>
+        <item>@string/hardware_keys_action_partial_screenshot</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
