@@ -33,4 +33,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="screenshot_category"
+        android:title="@string/screenshot_title">
+
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="screenshot_clipboard_only"
+            android:title="@string/lineage_screenshot_clipboard_only_title"
+            android:summary="@string/lineage_screenshot_clipboard_only_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

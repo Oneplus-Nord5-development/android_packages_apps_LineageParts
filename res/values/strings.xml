@@ -831,4 +831,7 @@
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
     <string name="menu_show_system">Show system apps</string>
     <string name="menu_hide_system">Hide system apps</string>
+    <string name="screenshot_title">Screenshot</string>
+    <string name="lineage_screenshot_clipboard_only_title">Copy to clipboard only</string>
+    <string name="lineage_screenshot_clipboard_only_summary">Copy screenshot to clipboard instead of saving in storage</string>
 </resources>
