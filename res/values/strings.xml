@@ -469,6 +469,8 @@
     <string name="dynamic_island_stopwatch_summary">Show stopwatch progress and controls in the island</string>
     <string name="dynamic_island_live_scores_title">Live scores</string>
     <string name="dynamic_island_live_scores_summary">Show live scores for sports in the island for apps that give live score notification.</string>
+    <string name="dynamic_island_lyrics_title">Show lyrics</string>
+    <string name="dynamic_island_lyrics_summary">Show lyrics for supported apps in a card below the music card in the island</string>
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
