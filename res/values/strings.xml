@@ -832,6 +832,11 @@
     <!-- Hide developer status -->
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
+
+    <!-- Hide and block GMS -->
+    <string name="hide_gms_title">Hide and block GMS</string>
+    <string name="hide_gms_summary">Hide and block Google Play Services and Play Store from selected apps</string>
+
     <string name="menu_show_system">Show system apps</string>
     <string name="menu_hide_system">Hide system apps</string>
     <string name="screenshot_title">Screenshot</string>

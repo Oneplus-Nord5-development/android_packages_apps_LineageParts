@@ -55,4 +55,12 @@
         android:summary="@string/hide_developer_status_summary"
         android:fragment="org.lineageos.lineageparts.spoofing.HideDeveloperStatus" />
 
+    <!-- Hide and block GMS -->
+    <Preference
+        android:key="hide_gms"
+        android:icon="@drawable/ic_settings_spoofing"
+        android:title="@string/hide_gms_title"
+        android:summary="@string/hide_gms_summary"
+        android:fragment="org.lineageos.lineageparts.spoofing.HideGms" />
+
 </PreferenceScreen>
