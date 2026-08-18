@@ -467,8 +467,10 @@
     <string name="dynamic_island_flashlight_summary">Show flashlight status in the island when it is enabled</string>
     <string name="dynamic_island_stopwatch_title">Stopwatch</string>
     <string name="dynamic_island_stopwatch_summary">Show stopwatch progress and controls in the island</string>
-    <string name="dynamic_island_live_scores_title">Live scores</string>
-    <string name="dynamic_island_live_scores_summary">Show live scores for sports in the island for apps that give live score notification.</string>
+    <string name="dynamic_island_live_scores_title">Live sports</string>
+    <string name="dynamic_island_live_scores_summary">Show real-time sports scores and fixtures in the island</string>
+    <string name="dynamic_island_pinned_sports_title">Live sports matches</string>
+    <string name="dynamic_island_pinned_sports_summary">Browse live scores, fixtures, and pin matches to Dynamic Island</string>
     <string name="dynamic_island_lyrics_title">Show lyrics</string>
     <string name="dynamic_island_lyrics_summary">Show lyrics for supported apps in a card below the music card in the island</string>
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
@@ -555,6 +557,8 @@
 
     <!-- Miscellaneous -->
     <string name="misc_settings_title">Miscellaneous</string>
+    <string name="gms_doze_title">Google Play services battery optimization</string>
+    <string name="gms_doze_summary">Allow Google Play services to enter doze mode to save standby battery</string>
 
     <!-- Protected apps -->
     <string name="protected_apps_manager_title">Protected apps</string>
