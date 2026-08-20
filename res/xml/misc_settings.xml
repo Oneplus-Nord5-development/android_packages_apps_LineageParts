@@ -45,4 +45,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="gms_doze_category"
+        android:title="@string/gms_doze_title">
+
+        <lineageos.preference.LineageGlobalSettingSwitchPreference
+            android:key="gms_doze"
+            android:title="@string/gms_doze_title"
+            android:summary="@string/gms_doze_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
