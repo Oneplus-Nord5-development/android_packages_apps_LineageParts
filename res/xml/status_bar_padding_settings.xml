@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:key="status_bar_padding_settings"
+    android:title="@string/status_bar_padding_title">
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:key="status_bar_padding_left"
+        android:title="@string/status_bar_padding_left_title"
+        android:defaultValue="0"
+        android:max="50"
+        lineage:min="-50"
+        lineage:interval="1"
+        lineage:units="dp" />
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:key="status_bar_padding_right"
+        android:title="@string/status_bar_padding_right_title"
+        android:defaultValue="0"
+        android:max="50"
+        lineage:min="-50"
+        lineage:interval="1"
+        lineage:units="dp" />
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:key="status_bar_padding_top"
+        android:title="@string/status_bar_padding_top_title"
+        android:defaultValue="0"
+        android:max="50"
+        lineage:min="-50"
+        lineage:interval="1"
+        lineage:units="dp" />
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:key="status_bar_padding_bottom"
+        android:title="@string/status_bar_padding_bottom_title"
+        android:defaultValue="0"
+        android:max="50"
+        lineage:min="-50"
+        lineage:interval="1"
+        lineage:units="dp" />
+
+</PreferenceScreen>

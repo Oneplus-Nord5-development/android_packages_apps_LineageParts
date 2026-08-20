@@ -842,4 +842,14 @@
     <string name="screenshot_title">Screenshot</string>
     <string name="lineage_screenshot_clipboard_only_title">Copy to clipboard only</string>
     <string name="lineage_screenshot_clipboard_only_summary">Copy screenshot to clipboard instead of saving in storage</string>
+
+    <!-- Status bar padding -->
+    <string name="status_bar_padding_title">Status bar padding</string>
+    <string name="status_bar_padding_summary">Adjust status bar padding</string>
+    <string name="status_bar_padding_left_title">Left padding</string>
+    <string name="status_bar_padding_right_title">Right padding</string>
+    <string name="status_bar_padding_top_title">Top padding</string>
+    <string name="status_bar_padding_bottom_title">Bottom padding</string>
+    <string name="minus">Decrease</string>
+    <string name="plus">Increase</string>
 </resources>
