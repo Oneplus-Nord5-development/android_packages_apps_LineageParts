@@ -51,4 +51,34 @@
         android:title="@string/network_traffic_show_units"
         app:useSimpleSummaryProvider="true" />
 
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:defaultValue="14"
+        android:key="network_traffic_text_size_single"
+        android:max="24"
+        android:title="@string/network_traffic_text_size_single_title"
+        app:interval="1"
+        app:min="8"
+        app:settingsType="lineage_secure"
+        app:units="sp" />
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:defaultValue="10"
+        android:key="network_traffic_text_size_single_compact"
+        android:max="20"
+        android:title="@string/network_traffic_text_size_single_compact_title"
+        app:interval="1"
+        app:min="6"
+        app:settingsType="lineage_secure"
+        app:units="sp" />
+
+    <org.lineageos.lineageparts.widget.CustomSeekBarPreference
+        android:defaultValue="8"
+        android:key="network_traffic_text_size_multi"
+        android:max="18"
+        android:title="@string/network_traffic_text_size_multi_title"
+        app:interval="1"
+        app:min="6"
+        app:settingsType="lineage_secure"
+        app:units="sp" />
+
 </PreferenceScreen>

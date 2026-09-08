@@ -23,6 +23,11 @@
         <attr name="interval" format="integer" />
         <attr name="units" format="string" />
         <attr name="continuousUpdates" format="boolean" />
+        <attr name="settingsType">
+            <enum name="system" value="0" />
+            <enum name="secure" value="1" />
+            <enum name="lineage_secure" value="2" />
+        </attr>
     </declare-styleable>
 
     <attr name="wifi_signal_color" format="reference" />

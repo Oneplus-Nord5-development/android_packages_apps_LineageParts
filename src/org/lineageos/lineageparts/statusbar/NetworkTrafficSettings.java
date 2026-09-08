@@ -19,6 +19,7 @@ import lineageos.providers.LineageSettings;
 import org.lineageos.lineageparts.R;
 import org.lineageos.lineageparts.SettingsPreferenceFragment;
 import org.lineageos.lineageparts.utils.DeviceUtils;
+import org.lineageos.lineageparts.widget.CustomSeekBarPreference;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener  {
@@ -46,6 +47,9 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private LineageSecureSettingSwitchPreference mNetTrafficHideArrows;
     private ListPreference mNetTrafficUnits;
     private ListPreference mNetTrafficShowUnits;
+    private CustomSeekBarPreference mNetTrafficSingleTextSize;
+    private CustomSeekBarPreference mNetTrafficSingleCompactTextSize;
+    private CustomSeekBarPreference mNetTrafficMultiTextSize;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -111,6 +115,13 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficShowUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_SHOW_UNITS);
         mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
         adjustShowUnitsState(units, resolver);
+
+        mNetTrafficSingleTextSize = findPreference(
+                LineageSettings.Secure.NETWORK_TRAFFIC_TEXT_SIZE_SINGLE);
+        mNetTrafficSingleCompactTextSize = findPreference(
+                LineageSettings.Secure.NETWORK_TRAFFIC_TEXT_SIZE_SINGLE_COMPACT);
+        mNetTrafficMultiTextSize = findPreference(
+                LineageSettings.Secure.NETWORK_TRAFFIC_TEXT_SIZE_MULTI);
 
         updateEnabledStates(mode);
     }
@@ -179,6 +190,15 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficHideArrows.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
         mNetTrafficShowUnits.setEnabled(enabled);
+        if (mNetTrafficSingleTextSize != null) {
+            mNetTrafficSingleTextSize.setEnabled(enabled);
+        }
+        if (mNetTrafficSingleCompactTextSize != null) {
+            mNetTrafficSingleCompactTextSize.setEnabled(enabled);
+        }
+        if (mNetTrafficMultiTextSize != null) {
+            mNetTrafficMultiTextSize.setEnabled(enabled);
+        }
     }
 
     private int getClockPosition() {

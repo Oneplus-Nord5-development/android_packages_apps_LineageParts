@@ -26,16 +26,23 @@ import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.custom.preference.SelfRemovingPreference;
 
+import lineageos.providers.LineageSettings;
+
 import org.lineageos.lineageparts.R;
 
 public class CustomSeekBarPreference extends SelfRemovingPreference
         implements SeekBar.OnSeekBarChangeListener {
+
+    public static final int SETTINGS_TYPE_SYSTEM = 0;
+    public static final int SETTINGS_TYPE_SECURE = 1;
+    public static final int SETTINGS_TYPE_LINEAGE_SECURE = 2;
 
     private static final int REPEAT_INTERVAL = 80;
 
     private final Handler mHandler = new Handler(Looper.getMainLooper());
     private Runnable mAutoRepeatRunnable;
 
+    protected int mSettingsType = SETTINGS_TYPE_SYSTEM;
     private int mMin = 0;
     private int mMax = 100;
     private int mDefaultValue = 0;
@@ -70,6 +77,8 @@ public class CustomSeekBarPreference extends SelfRemovingPreference
         }
         mContinuousUpdates = a.getBoolean(
                 R.styleable.CustomSeekBarPreference_continuousUpdates, mContinuousUpdates);
+        mSettingsType = a.getInt(
+                R.styleable.CustomSeekBarPreference_settingsType, mSettingsType);
 
         TypedArray aApp = context.obtainStyledAttributes(attrs, new int[] {
                 android.R.attr.defaultValue,
@@ -304,15 +313,39 @@ public class CustomSeekBarPreference extends SelfRemovingPreference
         setValue(newValue);
     }
 
+    public void setSettingsType(int settingsType) {
+        mSettingsType = settingsType;
+    }
+
+    public int getSettingsType() {
+        return mSettingsType;
+    }
+
     protected boolean isPersisted() {
+        if (mSettingsType == SETTINGS_TYPE_LINEAGE_SECURE) {
+            return LineageSettings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+        } else if (mSettingsType == SETTINGS_TYPE_SECURE) {
+            return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
+        }
         return Settings.System.getString(getContext().getContentResolver(), getKey()) != null;
     }
 
     protected void putInt(String key, int value) {
-        Settings.System.putInt(getContext().getContentResolver(), key, value);
+        if (mSettingsType == SETTINGS_TYPE_LINEAGE_SECURE) {
+            LineageSettings.Secure.putInt(getContext().getContentResolver(), key, value);
+        } else if (mSettingsType == SETTINGS_TYPE_SECURE) {
+            Settings.Secure.putInt(getContext().getContentResolver(), key, value);
+        } else {
+            Settings.System.putInt(getContext().getContentResolver(), key, value);
+        }
     }
 
     protected int getInt(String key, int defaultValue) {
+        if (mSettingsType == SETTINGS_TYPE_LINEAGE_SECURE) {
+            return LineageSettings.Secure.getInt(getContext().getContentResolver(), key, defaultValue);
+        } else if (mSettingsType == SETTINGS_TYPE_SECURE) {
+            return Settings.Secure.getInt(getContext().getContentResolver(), key, defaultValue);
+        }
         return Settings.System.getInt(getContext().getContentResolver(), key, defaultValue);
     }
 

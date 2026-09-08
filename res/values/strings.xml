@@ -551,6 +551,9 @@
     <string name="network_traffic_show_units_on">On</string>
     <string name="network_traffic_show_units_compact">Compact</string>
     <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
+    <string name="network_traffic_text_size_single_title">Single-line text size</string>
+    <string name="network_traffic_text_size_single_compact_title">Compact text size</string>
+    <string name="network_traffic_text_size_multi_title">Multi-line text size</string>
     <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
     <!-- Miscellaneous -->
